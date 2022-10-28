@@ -38,6 +38,7 @@ public class Rectangle {
 		System.out.println("width= "+this.width);
 		System.out.println("length= "+this.length);
 		System.out.println("Perimeter= "+this.perimeter);
+		System.out.println("Area= "+this.area);
 	}
 
 	public double getLength() {
@@ -46,6 +47,8 @@ public class Rectangle {
 
 	public void setLength(double length) {
 		this.length = length;
+		this.perimeter = findPerimeter();
+		this.area = findArea();
 	}
 
 	public double getWidth() {
@@ -54,6 +57,8 @@ public class Rectangle {
 
 	public void setWidth(double width) {
 		this.width = width;
+		this.perimeter = findPerimeter();
+		this.area = findArea();
 	}
 
 	public double getArea() {
