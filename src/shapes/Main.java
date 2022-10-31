@@ -31,26 +31,29 @@ public class Main {
 				if (createChoice == 1) {
 					
 					System.out.println("What is the rectangle Length?");
-					r.setLength(in.nextInt());
+					double l=in.nextDouble();
 					System.out.println("What is the rectangle Width?");
-					r.setWidth(in.nextInt());
+					double w=(in.nextDouble());
+					r=new Rectangle(l,w);
 					System.out.println("These are your stats!");
 					r.printStats();
 				} else if (createChoice == 2) {
 					
 					System.out.println("What is the length of side a?");
-					t.setSideA(in.nextInt());
+					double a=(in.nextDouble());
 					System.out.println("What is the length of side b?");
-					t.setSideB(in.nextInt());
+					double b=(in.nextDouble());
 					System.out.println("What is the length of side c?");
-					t.setSideC(in.nextInt());
+					double sidec=(in.nextDouble());
+					t=new Triangle(a,b,sidec);
 					System.out.println("These are your stats!");
 					t.printStats();
 				}
 
 				else if (createChoice == 3) {
 					System.out.println("What is the radius?");
-					c.setRadius(in.nextInt());
+					double rad=(in.nextDouble());
+					c=new Circle(rad);
 					System.out.println("These are your stats!");
 					c.printStats();
 				}
